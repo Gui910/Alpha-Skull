@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Skull</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Link para a fonte -->
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <div class="logo">
+            <span class="logo-text">Alpha Skull</span> <!-- Nome da empresa -->
+        </div>
+        <div class="search-form">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Pesquisar</button>
+        </div>
+        <div class="actions">
+            <a href="#">Cadastre-se</a>
+            <a href="#">Fazer login</a>
+            <!-- Adicionando o botão do Carrinho -->
+            <a href="carrinho.html" class="cart-button">Carrinho</a>
+        </div>
+    </div>
+
+    <!-- Menu de Categorias -->
+    <div class="category-menu">
+        <a href="#">Whey Protein</a>
+        <a href="#">Creatina</a>
+        <a href="#">Pré-treino</a>
+        <a href="#">Acessórios</a>
+        <a href="contato_1.html">Fale Conosco</a> <!-- Link para a página de contato -->
+    </div>
+    
+    <!-- Seção da Imagem de Propaganda -->
+    <div class="ad-container">
+        <img src="https://darkness.vtexassets.com/assets/vtex.file-manager-graphql/images/ba32194b-8cd9-47d8-9833-70b909ad4e96___9bcdbe29914903cb8b41a271d50c8a76.webp" alt="Nova Propaganda" class="ad-image"> <!-- Imagem de propaganda -->
+    </div>
+
+    <!-- Conteúdo dos Produtos -->
+    <div class="product-container">
+        <h1 style="text-align: center;">Mais Vendidos</h1> <!-- Título para "Mais Vendidos" -->
+
+        <!-- Quadrados para produtos -->
+        <div class="product-grid" style="display: flex; justify-content: center; gap: 20px;">
+            <div class="product-card">
+                <!-- Link para a página de descrição do Whey Protein Concentrado 900g -->
+                <a href="Whey Protein Concentrado 900g.html">
+                    <img src="img/whey 900g.png" alt="Whey Protein Concentrado 900g" class="product-image">
+                </a>
+                <p>Whey Protein Concentrado 900g</p>
+                <p class="product-price">R$ 199,90</p> 
+                <button class="add-to-cart" data-name="Whey Protein Concentrado 900g" data-price="199,90" data-image="img/whey 900g.png" data-unit="900g">Adicionar ao Carrinho</button> <!-- Botão Adicionar ao Carrinho -->
+            </div>
+            <div class="product-card">
+                <!-- Link para a página de descrição da Creatina -->
+                <a href="creatina-300g.html">
+                    <img src="img/Creatina300g.png" alt="Produto 2" class="product-image">
+                </a>
+                <p>Creatina Pura  300g</p>
+                <p class="product-price">R$ 99,90</p>
+                <button class="add-to-cart" data-name="Creatina Pura 300g" data-price="99,90" data-image="img/Creatina300g.png" data-unit="300g">Adicionar ao Carrinho</button> <!-- Botão Adicionar ao Carrinho -->
+            </div>
+            <div class="product-card">
+                <!-- Link para a página de descrição do Pré-Treino -->
+                <a href="pre-treino-evora-150g.html">
+                    <img src="img/Pre-Treino.png" alt="Produto 3" class="product-image">
+                </a>
+                <p>Pré-Treino Évora Pw 150g</p>
+                <p class="product-price">R$ 79,90</p>
+                <button class="add-to-cart" data-name="Pré-Treino Évora Pw 150g" data-price="79,90" data-image="img/Pre-Treino.png" data-unit="150g">Adicionar ao Carrinho</button> <!-- Botão Adicionar ao Carrinho -->
+            </div>
+            <div class="product-card">
+                <!-- Link para a página de descrição da Barrinha de Proteína -->
+                <a href="barrinha-proteina-dark-bar.html">
+                    <img src="img/Barrinha de proteina Dark Bar.png" alt="Produto 4" class="product-image">
+                </a>
+                <p>Barrinha de Proteína Dark Bar 8 unid</p>
+                <p class="product-price">R$ 39,90</p>
+                <button class="add-to-cart" data-name="Barrinha de Proteína Dark Bar 8 unid" data-price="39,90" data-image="img/Barrinha de proteina Dark Bar.png" data-unit="8 unid">Adicionar ao Carrinho</button> <!-- Botão Adicionar ao Carrinho -->
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>
